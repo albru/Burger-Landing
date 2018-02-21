@@ -154,7 +154,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		// Only deal with non-null/undefined values
 		if ( ( options = arguments[ i ] ) != null ) {
 
-			// Extend the base object
+			// Extend the _base object
 			for ( name in options ) {
 				src = target[ name ];
 				copy = options[ name ];
