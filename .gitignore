@@ -1,9 +1,8 @@
 #ignore
-*.gulp-scss-cache
-*.sass-cache
+.gulp-scss-cache
+.sass-cache
 node_modules
-*.bowerrc
-*.js
-*.json
+.bowerrc
+package-lock.json
 
 
