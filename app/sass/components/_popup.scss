@@ -1,0 +1,94 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $colGray09;
+}
+
+.full-review {
+  position: absolute;
+  display: flex;
+  z-index: -10;
+  opacity: 0;
+  transition: all .4s;
+  &--active {
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+.full-review__wrapper {
+  position: relative;
+  display: flex;
+  max-width: 45vw;
+  margin: auto;
+  background-color: $colWhite;
+  padding: 2rem;
+  border-radius: 1rem;
+  @include tablets {
+    max-width: 80vw;
+  }
+}
+
+.full-review__title {
+  font-family: $fontGagalin;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.full-review__content {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.full-review__close {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 1.5rem;
+  top: 1.5rem;
+  opacity: .4;
+  transition: .3s;
+  background-color: transparent;
+  border: none;
+  &:hover {
+    opacity: 1;
+  }
+  &-btn {
+    fill: red;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.status-popup__inner {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+}
+
+.status-popup__message {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.status-popup {
+  width: 24rem;
+}
+
+.error-message {
+  color: $colRed;
+}

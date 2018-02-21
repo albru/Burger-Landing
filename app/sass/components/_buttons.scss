@@ -1,0 +1,162 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.btn {
+  padding: 1.3rem 1.6rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  background-color: $colOrange;
+  color: $colWhite;
+  margin-right: 8rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    background-color: darken($colOrange, 20%);
+  }
+  @include tablets {
+    margin-right: 8rem;
+  }
+  @include phones {
+    margin-right: 11rem;
+  }
+}
+
+a.btn {
+  padding: 1.6rem 1.6rem;
+}
+
+.btn__carousel-burgers {
+  margin: 0;
+}
+
+.btn__delivery {
+  margin-right: 0;
+}
+
+.btn-down__link {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  transform: translateX(-100%);
+}
+
+.btn__down {
+  display: flex;
+  width: 6rem;
+  cursor: pointer;
+  animation: bounce 3s infinite;
+  transition: all 0.25s;
+  fill: $colWhite;
+  &:hover {
+    fill: $colOrange;
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -45px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+.btn__more {
+  padding: 1.3rem 1.6rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: auto;
+  background-color: $colLightGray;
+  border: none;
+  color: $colWhite;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    background-color: darken($colLightGray, 20%);
+  }
+  @include tablets {
+    margin-left: auto;
+  }
+  @include tablets {
+    margin-top: 0;
+  }
+}
+
+.btn__clear {
+  padding: 1.3rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: $colWhite;
+  cursor: pointer;
+  transition: all 0.25s;
+  &:hover {
+    color: darken($colWhite, 20%);
+  }
+}
+
+.carousel-burgers__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-burgers__icon--arrows {
+  &:hover {
+    fill: $colGray;
+  }
+}
+
+.carousel-burgers__btn--prev {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+  left: 1%;
+  z-index: 10000;
+  @include bigscreen {
+    left: 15vw;
+  }
+}
+
+.carousel-burgers__btn--next {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 50%;
+  right: 1%;
+  z-index: 10000;
+  @include bigscreen {
+    right: 15vw;
+  }
+}
+
+.btn__none {
+  display: none;
+}

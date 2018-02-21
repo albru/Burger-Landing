@@ -1,0 +1,89 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.promo {
+  width: 80%;
+  margin: 12vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  @include mediumscreen {
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+  }
+  @include tablets {
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  @include phones {
+    margin: 5vh auto;
+  }
+}
+
+.promo__image-item-burger {
+  background-image: url('../img/burger-promo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45.1rem;
+  height: 42.4rem;
+  @include tablets {
+    margin-bottom: 5rem;
+  }
+  @include phones {
+    margin-bottom: 8rem;
+  }
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.promo__title {
+  font-size: $textHuge;
+  font-family: $fontGagalin;
+  color: $colYellow;
+  line-height: 8.5rem;
+  margin-top: 8vh;
+  @include mediumscreen {
+    flex-wrap: wrap;
+    margin-top: 0;
+    text-align: center;
+  }
+  @include tablets {
+    flex-wrap: wrap;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.promo__text-item {
+  font-size: $textHuge;
+  font-family: $fontLifehack;
+  color: $colWhite;
+  line-height: 8.5rem;
+  text-transform: lowercase;
+  @include mediumscreen {
+    text-align: center;
+  }
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.promo__image {
+  margin-right: 5rem;
+  @include tablets {
+    margin: 0;
+  }
+}

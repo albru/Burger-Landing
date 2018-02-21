@@ -1,0 +1,50 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.team__bg {
+  position: relative;
+  min-height: 650px;
+  min-height: 100vh;
+  background-image: url("../img/background-images/bg-team.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.team__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-color: $colGray09;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__title {
+  font-family: $fontGagalin;
+  font-size: $textHuge;
+  color: $colYellow;
+  margin-bottom: 10vh;
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.accordeon-team__list {
+  margin-left: 25px;
+  @include tablets {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

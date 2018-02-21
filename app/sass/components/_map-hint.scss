@@ -1,0 +1,29 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.map__hint {
+  font-family: $fontGagalin;
+  font-size: $textMedium;
+  line-height: 1;
+  color: $colGray09;
+  padding: 1.5rem;
+  background-color: #f9b43b;
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+}
+
+.map__balloon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $fontGagalin;
+  font-size: $textSmall;
+  line-height: 1;
+  color: $colGray09;
+  padding: 1.5rem;
+  font-size: 3rem;
+  background-color: #f9b43b;
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+}
+
+.map__burger-img {
+  width: 10rem;
+}

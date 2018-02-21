@@ -1,0 +1,141 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.comments__bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.comments__image {
+  height: 50vh;
+  width: 25%;
+  filter: grayscale(1);
+  background-size: cover;
+  transition: all 0.45s;
+  &:hover {
+    filter: grayscale(0.5);
+  }
+  &:hover .comments__item {
+    opacity: 1;
+  }
+  @include tablets {
+    width: 50%;
+    height: 25vh;
+  }
+  @include phones {
+    width: 50%;
+  }
+}
+
+.comments__image--1 {
+  background-image: url('../img/comments-images/1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+
+.comments__image--2 {
+  background-image: url('../img/comments-images/2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.comments__image--3 {
+  background-image: url('../img/comments-images/3.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.comments__image--4 {
+  background-image: url('../img/comments-images/4.jpg');
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+}
+
+.comments__image--5 {
+  background-image: url('../img/comments-images/5.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.comments__image--6 {
+  background-image: url('../img/comments-images/6.jpg');
+  background-repeat: no-repeat;
+  background-position: 60% 0;
+}
+
+.comments__image--7 {
+  background-image: url('../img/comments-images/7.jpg');
+  background-repeat: no-repeat;
+  background-position: 40% 0;
+}
+
+.comments__image--8 {
+  background-image: url('../img/comments-images/8.jpg');
+  background-repeat: no-repeat;
+  background-position: 60% 0;
+}
+
+.comments__item {
+  background-size: contain;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 90%;
+  width: 70%;
+  margin: auto;
+  @include tablets {
+    margin-top: 1rem;
+    opacity: 1;
+  }
+  @include phones {
+
+  }
+}
+
+.comments__title {
+  display: flex;
+  margin-right: auto;
+  font-size: $textSmall;
+  color: $colWhite;
+  font-family: $fontGagalin;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  @include tablets {
+    margin-right: 0;
+    text-align: center;
+  }
+  @include phones {
+    line-height: 3rem;
+    font-size: $textMedium;
+  }
+}
+
+.comments__text {
+  font-size: $textSmall;
+  color: $colWhite;
+  line-height: 2.2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  max-height:150px;
+  @include tablets {
+    text-align: center;
+    display: none;
+  }
+  @include phones {
+    display: none;
+  }
+}

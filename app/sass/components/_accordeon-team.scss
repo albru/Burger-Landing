@@ -1,0 +1,105 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.accordeon-team {
+  font-size: $textSmall;
+  color: $colWhite;
+  line-height: 24px;
+  width: 100%;
+}
+
+.accordeon-team__desc-area {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 0;
+  overflow: hidden;
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.accordeon-team__desc-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url('../img/our-team/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.accordeon-team__desc-text-title {
+
+}
+
+.accordeon-team__desc-people {
+  position: relative;
+  display: flex;
+  font-family: $fontGagalin;
+  margin-bottom: 15px;
+  font-size:$textSmall;
+  background-color: transparent;
+  border: none;
+  color: $colWhite;
+  @include tablets {
+    justify-content: center;
+    font-size:$textMedium;
+    margin: 3rem auto;
+  }
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    left: -2.5rem;
+    top: 0.3rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    border-top-color: $colYellow;
+    border-bottom: 0;
+    cursor: pointer;
+    @include tablets {
+      left: -2.5rem;
+      top: 1.2rem;
+    }
+  }
+  &.accordeon-team__desc-people--active {
+    color: $colYellow;
+  }
+  &.accordeon-team__desc-people--active+.accordeon-team__desc-area {
+    height: 100%;
+  }
+  &.accordeon-team__desc-people--active:before {
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    border-bottom-color: $colYellow;
+    border-top: 0;
+    cursor: pointer;
+    cursor: pointer;
+    @include tablets {
+      left: -2.5rem;
+      top: 1.2rem;
+    }
+  }
+}
+
+.accordeon-team__desc__text {
+  width: 15vw;
+  @include tablets {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

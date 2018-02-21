@@ -1,0 +1,99 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.features__bg {
+  min-height: 100vh;
+  background-image: url('../img/background-images/bg-features.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.features__icon--meat {
+  width: 97px;
+  height: 89px;
+  fill: $colOrange;
+}
+
+.features__icon--hand {
+  width: 97px;
+  height: 89px;
+  fill: $colYellow;
+}
+
+.features__icon--natural {
+  width: 97px;
+  height: 89px;
+  fill: $colGreen;
+}
+
+.features__main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $textHuge;
+  font-family: $fontGagalin;
+  color: $colGray;
+  height: $textHuge;
+  margin-bottom: $textHuge;
+  @include phones {
+    margin-bottom: $textHuge / 2;
+  }
+}
+
+.features__items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  @include phones {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.features__list {
+  width: 30%;
+  margin-right: 1vw;
+  @include phones {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1vh;
+  }
+}
+
+.features__item {
+  margin-bottom: 1rem;
+}
+
+.features__title {
+  line-height: 2.8rem;
+}
+
+.features__title {
+  font-size: $textMedium;
+  font-family: $fontLifehack;
+  color: $colGray;
+}
+
+.features__text {
+  color: $colLightGray;
+  font-size: $textSmall;
+  line-height: 2.4rem;
+}
