@@ -5,4 +5,4 @@ node_modules
 bower.json
 gulpfile.js
 package.json
-package-lock.kson
+package-lock.json
