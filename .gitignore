@@ -1,3 +1,4 @@
+#ignore
 .gulp-scss-cache
 .sass-cache
 node_modules
@@ -6,3 +7,4 @@ bower.json
 gulpfile.js
 package.json
 package-lock.json
+
