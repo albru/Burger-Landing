@@ -17,6 +17,7 @@
   align-content: center;
   justify-content: center;
   height: 100%;
+
 }
 
 .best-burgers__list {
@@ -27,6 +28,7 @@
   align-content: center;
   padding: 2rem;
   z-index: 1;
+  max-width: 1100px;
   @include tablets {
     padding: 0;
   }
