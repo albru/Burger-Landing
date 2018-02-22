@@ -10,7 +10,6 @@
   flex-wrap: nowrap;
   @include mediumscreen {
     flex-direction: column;
-    margin-top: 0;
     justify-content: center;
     align-content: center;
     width: 60%;
@@ -18,14 +17,13 @@
   }
   @include tablets {
     flex-direction: column;
-    margin-top: 0;
     justify-content: center;
     align-content: center;
     width: 80%;
     margin: auto;
   }
   @include phones {
-    margin: 5vh auto;
+
   }
 }
 

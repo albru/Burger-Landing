@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-burger-sandwich-name: 'Burger_sandwich';
+$-burger-sandwich-x: 250px;
+$-burger-sandwich-y: 583px;
+$-burger-sandwich-offset-x: -250px;
+$-burger-sandwich-offset-y: -583px;
+$-burger-sandwich-width: 215px;
+$-burger-sandwich-height: 160px;
+$-burger-sandwich-total-width: 1121px;
+$-burger-sandwich-total-height: 938px;
+$-burger-sandwich-image: 'app/img/sprites/';
+$-burger-sandwich: (250px, 583px, -250px, -583px, 215px, 160px, 1121px, 938px, 'app/img/sprites/', 'Burger_sandwich', );
+$-n-y-c-diner-bacon-cheeseburger-name: 'NYC-Diner-Bacon-Cheeseburger';
+$-n-y-c-diner-bacon-cheeseburger-x: 750px;
+$-n-y-c-diner-bacon-cheeseburger-y: 583px;
+$-n-y-c-diner-bacon-cheeseburger-offset-x: -750px;
+$-n-y-c-diner-bacon-cheeseburger-offset-y: -583px;
+$-n-y-c-diner-bacon-cheeseburger-width: 215px;
+$-n-y-c-diner-bacon-cheeseburger-height: 160px;
+$-n-y-c-diner-bacon-cheeseburger-total-width: 1121px;
+$-n-y-c-diner-bacon-cheeseburger-total-height: 938px;
+$-n-y-c-diner-bacon-cheeseburger-image: 'app/img/sprites/';
+$-n-y-c-diner-bacon-cheeseburger: (750px, 583px, -750px, -583px, 215px, 160px, 1121px, 938px, 'app/img/sprites/', 'NYC-Diner-Bacon-Cheeseburger', );
+$-spicy-shrimp-burger-name: 'Spicy_Shrimp_Burger';
+$-spicy-shrimp-burger-x: 0px;
+$-spicy-shrimp-burger-y: 778px;
+$-spicy-shrimp-burger-offset-x: 0px;
+$-spicy-shrimp-burger-offset-y: -778px;
+$-spicy-shrimp-burger-width: 215px;
+$-spicy-shrimp-burger-height: 160px;
+$-spicy-shrimp-burger-total-width: 1121px;
+$-spicy-shrimp-burger-total-height: 938px;
+$-spicy-shrimp-burger-image: 'app/img/sprites/';
+$-spicy-shrimp-burger: (0px, 778px, 0px, -778px, 215px, 160px, 1121px, 938px, 'app/img/sprites/', 'Spicy_Shrimp_Burger', );
+$black-burger-name: 'black-burger';
+$black-burger-x: 0px;
+$black-burger-y: 583px;
+$black-burger-offset-x: 0px;
+$black-burger-offset-y: -583px;
+$black-burger-width: 215px;
+$black-burger-height: 160px;
+$black-burger-total-width: 1121px;
+$black-burger-total-height: 938px;
+$black-burger-image: 'app/img/sprites/';
+$black-burger: (0px, 583px, 0px, -583px, 215px, 160px, 1121px, 938px, 'app/img/sprites/', 'black-burger', );
+$chiken-burger-name: 'chiken-burger';
+$chiken-burger-x: 500px;
+$chiken-burger-y: 583px;
+$chiken-burger-offset-x: -500px;
+$chiken-burger-offset-y: -583px;
+$chiken-burger-width: 215px;
+$chiken-burger-height: 160px;
+$chiken-burger-total-width: 1121px;
+$chiken-burger-total-height: 938px;
+$chiken-burger-image: 'app/img/sprites/';
+$chiken-burger: (500px, 583px, -500px, -583px, 215px, 160px, 1121px, 938px, 'app/img/sprites/', 'chiken-burger', );
+$-burger-sandwich-name: 'Burger_sandwich';
+$-burger-sandwich-x: 0px;
+$-burger-sandwich-y: 0px;
+$-burger-sandwich-offset-x: 0px;
+$-burger-sandwich-offset-y: 0px;
+$-burger-sandwich-width: 351px;
+$-burger-sandwich-height: 257px;
+$-burger-sandwich-total-width: 1121px;
+$-burger-sandwich-total-height: 938px;
+$-burger-sandwich-image: 'app/img/sprites/';
+$-burger-sandwich: (0px, 0px, 0px, 0px, 351px, 257px, 1121px, 938px, 'app/img/sprites/', 'Burger_sandwich', );
+$-n-y-c-diner-bacon-cheeseburger-name: 'NYC-Diner-Bacon-Cheeseburger';
+$-n-y-c-diner-bacon-cheeseburger-x: 385px;
+$-n-y-c-diner-bacon-cheeseburger-y: 292px;
+$-n-y-c-diner-bacon-cheeseburger-offset-x: -385px;
+$-n-y-c-diner-bacon-cheeseburger-offset-y: -292px;
+$-n-y-c-diner-bacon-cheeseburger-width: 350px;
+$-n-y-c-diner-bacon-cheeseburger-height: 256px;
+$-n-y-c-diner-bacon-cheeseburger-total-width: 1121px;
+$-n-y-c-diner-bacon-cheeseburger-total-height: 938px;
+$-n-y-c-diner-bacon-cheeseburger-image: 'app/img/sprites/';
+$-n-y-c-diner-bacon-cheeseburger: (385px, 292px, -385px, -292px, 350px, 256px, 1121px, 938px, 'app/img/sprites/', 'NYC-Diner-Bacon-Cheeseburger', );
+$-spicy-shrimp-burger-name: 'Spicy_Shrimp_Burger';
+$-spicy-shrimp-burger-x: 0px;
+$-spicy-shrimp-burger-y: 292px;
+$-spicy-shrimp-burger-offset-x: 0px;
+$-spicy-shrimp-burger-offset-y: -292px;
+$-spicy-shrimp-burger-width: 350px;
+$-spicy-shrimp-burger-height: 256px;
+$-spicy-shrimp-burger-total-width: 1121px;
+$-spicy-shrimp-burger-total-height: 938px;
+$-spicy-shrimp-burger-image: 'app/img/sprites/';
+$-spicy-shrimp-burger: (0px, 292px, 0px, -292px, 350px, 256px, 1121px, 938px, 'app/img/sprites/', 'Spicy_Shrimp_Burger', );
+$black-burger-name: 'black-burger';
+$black-burger-x: 771px;
+$black-burger-y: 291px;
+$black-burger-offset-x: -771px;
+$black-burger-offset-y: -291px;
+$black-burger-width: 350px;
+$black-burger-height: 256px;
+$black-burger-total-width: 1121px;
+$black-burger-total-height: 938px;
+$black-burger-image: 'app/img/sprites/';
+$black-burger: (771px, 291px, -771px, -291px, 350px, 256px, 1121px, 938px, 'app/img/sprites/', 'black-burger', );
+$chiken-burger-name: 'chiken-burger';
+$chiken-burger-x: 386px;
+$chiken-burger-y: 0px;
+$chiken-burger-offset-x: -386px;
+$chiken-burger-offset-y: 0px;
+$chiken-burger-width: 350px;
+$chiken-burger-height: 257px;
+$chiken-burger-total-width: 1121px;
+$chiken-burger-total-height: 938px;
+$chiken-burger-image: 'app/img/sprites/';
+$chiken-burger: (386px, 0px, -386px, 0px, 350px, 257px, 1121px, 938px, 'app/img/sprites/', 'chiken-burger', );
+$promo-burger-name: 'promo-burger';
+$promo-burger-x: 771px;
+$promo-burger-y: 0px;
+$promo-burger-offset-x: -771px;
+$promo-burger-offset-y: 0px;
+$promo-burger-width: 350px;
+$promo-burger-height: 256px;
+$promo-burger-total-width: 1121px;
+$promo-burger-total-height: 938px;
+$promo-burger-image: 'app/img/sprites/';
+$promo-burger: (771px, 0px, -771px, 0px, 350px, 256px, 1121px, 938px, 'app/img/sprites/', 'promo-burger', );
+$spritesheet-width: 1121px;
+$spritesheet-height: 938px;
+$spritesheet-image: 'app/img/sprites/';
+$spritesheet-sprites: ($-burger-sandwich, $-n-y-c-diner-bacon-cheeseburger, $-spicy-shrimp-burger, $black-burger, $chiken-burger, $-burger-sandwich, $-n-y-c-diner-bacon-cheeseburger, $-spicy-shrimp-burger, $black-burger, $chiken-burger, $promo-burger, );
+$spritesheet: (1121px, 938px, 'app/img/sprites/', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

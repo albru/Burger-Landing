@@ -1,5 +1,6 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
+@import '../base/sprite-png.scss';
 
 .best-burgers__slider-container {
   display: flex;
@@ -68,44 +69,64 @@
   display: flex;
   width: 350px;
   height: 256px;
+  @include phones {
+    width: 215px;
+    height: 160px;
+  }
 
 }
+
 
 .carousel-burgers__img-item--chicken {
   background-image: url('../img/sprites/sprite-png.png');
   background-repeat: no-repeat;
   background-position: -386px 0;
+  @include phones {
+    background-position: -500px -583px;
+  }
 }
 
 .carousel-burgers__img-item--sandwich {
   background-image: url('../img/sprites/sprite-png.png');
   background-repeat: no-repeat;
   background-position: 0 0;
+  @include phones {
+    background-position: -250px -583px;
+  }
 }
 
 .carousel-burgers__img-item--nyc {
   background-image: url('../img/sprites/sprite-png.png');
   background-repeat: no-repeat;
   background-position: -385px -292px;
+  @include phones {
+    background-position: -750px -583px;
+  }
 }
 
 .carousel-burgers__img-item--shrimp {
   background-image: url('../img/sprites/sprite-png.png');
   background-repeat: no-repeat;
   background-position: -771px -291px;
+  @include phones {
+    background-position: 0 -778px;
+  }
 }
 
 .carousel-burgers__img-item--black {
   background-image: url('../img/sprites/sprite-png.png');
   background-repeat: no-repeat;
   background-position: 0 -292px;
+  @include phones {
+    background-position: 0 -583px;
+  }
 }
 
 .carousel-burgers__desc {
   text-align: left;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   @include tablets {
     text-align: center;
@@ -117,17 +138,16 @@
   font-size: $textHuge;
   color: $colWhite;
   font-family: $fontGagalin;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
   line-height: 6.4rem;
 }
 
 .carousel-burgers__desc-text {
   font-size: $textSmall;
   color: $colWhite;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
   line-height: 2.4rem;
 }
-
 
 .carousel-burgers__desc-price {
   display: flex;
