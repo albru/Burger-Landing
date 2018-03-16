@@ -10,8 +10,7 @@ Burgers Landing
 
 
 * HTML
-* CSS/SCSS
-* SVG/PNG sprites
+* SCSS
 * NPM
 * Gulp
 * Bower
