@@ -11,9 +11,10 @@ Burgers Landing
 
 * HTML
 * SCSS
-* NPM
-* Gulp
-* Bower
+* Адаптивная вёрстка
 * BEM
-* JS/jQuery(OnePageScroll, простенький слайдер)
+* NPM
+* Bower
+* Gulp
+* JS / jQuery
 * AJAX для формы

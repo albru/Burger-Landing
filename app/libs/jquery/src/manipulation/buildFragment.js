@@ -63,7 +63,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 		}
 	}
 
-	// Remove wrapper from fragment
+	// Remove blurFormWrapper from fragment
 	fragment.textContent = "";
 
 	i = 0;

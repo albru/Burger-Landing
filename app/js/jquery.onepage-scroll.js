@@ -221,7 +221,7 @@
             } else {
                 if ($("body").hasClass("disabled-onepage-scroll")) {
                     $("body").removeClass("disabled-onepage-scroll");
-                    $("html, body, .wrapper").animate({scrollTop: 0}, "fast");
+                    $("html, body, .blurFormWrapper").animate({scrollTop: 0}, "fast");
                 }
 
 
@@ -261,7 +261,7 @@
 
         // Prepare everything before binding wheel scroll
 
-        el.addClass("onepage-wrapper").css("position", "relative");
+        el.addClass("onepage-blurFormWrapper").css("position", "relative");
         $.each(sections, function (i) {
             $(this).css({
                 position: "absolute",
