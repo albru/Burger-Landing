@@ -16,4 +16,3 @@ Burgers Landing
 * Bower
 * Gulp
 * JS / jQuery
-* AJAX для формы
